@@ -5,7 +5,7 @@ Read the -h option first.
 
 This script will read from the file "arguments.txt" in the same file and pass each line as an argument to the Java method of the class and package specified. Then it will print the returned values.
 
-This is usefull when trying to deobfuscate some strings with custom deobfuscation methods. Just do something like:
+This is usefull when trying to deobfuscate some strings that have custom deobfuscation methods. Just do something like:
 
 `cat > arguments.txt`
 
