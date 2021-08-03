@@ -3,7 +3,7 @@ A simple Python script that use Frida to print the returned value from an Androi
 
 Read the -h option first.
 
-This script will read from the file "arguments.txt" in the same file and pass each line as an argument to the Java method of the class and package specified. Then it will print the returned values.
+This script will read from the file "arguments.txt" in the same directory and pass each line as an argument to the Java method of the class and package specified. Then it will print the returned values.
 
 This is usefull when trying to deobfuscate some strings that have custom deobfuscation methods. Just do something like:
 
