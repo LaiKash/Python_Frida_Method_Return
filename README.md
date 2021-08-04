@@ -1,5 +1,5 @@
 # Python-Frida-Method-Return
-A simple Python script that use Frida to print the returned value from an Android static method.
+A simple and dirty Python script that use Frida to print the returned value from an Android static method.
 
 Read the -h option first.
 
