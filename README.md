@@ -13,6 +13,6 @@ And paste+enter the obfuscated strings (without ""). At the end, ctrl+c and exec
 
 It just works with static methods.
 
-# TODO
+## TODO
 
 Fix the -s option not working.
