@@ -12,3 +12,7 @@ This is usefull when trying to deobfuscate some strings that have custom deobfus
 And paste+enter the obfuscated strings (without ""). At the end, ctrl+c and execute the script. Dirty but easy.
 
 It just works with static methods.
+
+# TODO
+
+Fix the -s option not working.
