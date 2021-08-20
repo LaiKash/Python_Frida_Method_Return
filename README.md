@@ -15,4 +15,4 @@ It just works with static methods.
 
 ## TODO
 
-Fix the -s option not working.
+Include option -s to read from STDIN to just copy and paste without needing the file.
