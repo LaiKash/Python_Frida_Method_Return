@@ -13,6 +13,10 @@ And paste+enter the obfuscated strings (without ""). At the end, ctrl+c and exec
 
 It just works with static methods.
 
+Example use:
+
+> python3 script.py com.example.package com.example.class.MainActivity exampleMethod
+
 ## TODO
 
 Include option -s to read from STDIN to just copy and paste without needing the file.
