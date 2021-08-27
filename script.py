@@ -6,7 +6,7 @@ parser = ArgumentParser()
 parser.add_argument("pkg",
                     help="Package name to attach")
 parser.add_argument("cls",
-                    help="Class name to attach Frida")
+                    help="Class (full) name to attach Frida")
 parser.add_argument("mth",
                     help="Method name to call in Frida")
 parser.add_argument("file", default="arguments.txt", nargs='?',
@@ -42,7 +42,10 @@ pid = device.spawn([args.pkg])
 session = device.attach(pid)
 
 def on_message(message, data):
-    print(message["payload"])
+        try:
+            print(message["payload"])
+        except: 
+            print(message)
 
 with open('script.js') as f:
     script = session.create_script(f.read())
