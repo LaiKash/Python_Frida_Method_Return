@@ -20,3 +20,4 @@ Example use:
 ## TODO
 
 Include option -s to read from STDIN to just copy and paste without needing the file.
+Include the -p option to attach to a process (due to apps with no front-end actvity).
