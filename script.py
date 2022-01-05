@@ -9,11 +9,10 @@ parser.add_argument("cls",
                     help="Class (full) name to attach")
 parser.add_argument("mth",
                     help="Method name to call in Frida")
-parser.add_argument("file", default="arguments.txt", nargs='?',
+parser.add_argument("-f", "--file", default="arguments.txt", nargs='?',
                      help="File name in this folder where the arguments to the method are stored (default name: arguments.txt).")
-parser.add_argument("script", default="script.js", nargs='?',
+parser.add_argument("-s", "--script", default="script.js", nargs='?',action='store',
                      help="Frida script name, in case you want to change it (default name: script.js).")
-
 
 args = parser.parse_args()
 
@@ -46,7 +45,7 @@ def on_message(message, data):
 	    print(message["payload"])
 	except: 
 	    print(message)
-        
+
 with open(args.script) as f:
     script = session.create_script(f.read())
     from_file(args.file)  
