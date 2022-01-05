@@ -1,5 +1,5 @@
 # Python_Frida_Method_Return
-A simple and dirty Python script that use Frida to print the returned value from an Android static method.
+A simple and dirty Python script that use Frida to print the returned value from an Android method.
 
 Read the -h option first.
 
@@ -11,7 +11,7 @@ This is usefull when trying to deobfuscate some strings that have custom deobfus
 
 And paste+enter the obfuscated strings (without ""). At the end, ctrl+c and execute the script. Dirty but easy.
 
-It just works with static methods.
+The default script only works with `public static` methods. the `script2.js` has an example on how it could be done when a method instance is needed.
 
 Example use:
 
@@ -20,4 +20,5 @@ Example use:
 ## TODO
 
 Include option -s to read from STDIN to just copy and paste without needing the file.
+
 Include the -p option to attach to a process (due to apps with no front-end actvity).
