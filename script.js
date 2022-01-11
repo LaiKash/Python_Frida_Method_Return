@@ -10,6 +10,7 @@ recv('cls', function onMessage(cls) {
 
 
 Java.perform(function(){
+    strArg[i] = strArg[i].replace(/(\r\n|\n|\r)/gm, "");
     for (let i = 0; i < strArg.length; i++) {
         send(
                 Java.use(cl)[meth](strArg[i])
