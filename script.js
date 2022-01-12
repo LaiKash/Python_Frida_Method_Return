@@ -11,6 +11,7 @@ recv('cls', function onMessage(cls) {
 
 Java.perform(function(){
     strArg[i] = strArg[i].replace(/(\r\n|\n|\r)/gm, "");
+    console.log(strArg[i])
     for (let i = 0; i < strArg.length; i++) {
         send(
                 Java.use(cl)[meth](strArg[i])
