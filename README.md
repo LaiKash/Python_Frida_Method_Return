@@ -11,7 +11,7 @@ This is usefull when trying to deobfuscate some strings that have custom deobfus
 
 And paste+enter the obfuscated strings (without ""). At the end, ctrl+c and execute the script. Dirty but easy.
 
-The default script only works with `public static` methods. the `script2.js` has an example on how it could be done when a method instance is needed.
+The default script only works with `public static` methods. The `script2.js` has an example on how it could be done when a method instance is needed.
 
 Example use:
 
