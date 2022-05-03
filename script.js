@@ -7,8 +7,8 @@ recv('cls', function onMessage(cls) {
     meth = cls.meth;
     strArg = cls.line;
 });
-
-var f = new File("/sdcard/log.txt", "w");
+// Thhis is to have a file in the device to include the output. Touch it before to create it.
+//var f = new File("/sdcard/log.txt", "w");
 var result
 Java.perform(function(){
     for (let i = 0; i < strArg.length; i++) {
@@ -17,13 +17,13 @@ Java.perform(function(){
     
     f.write("\x1b[31m"+strArg[i]+"\x1b[0m\n");
     result = Java.use(cl)[meth](strArg[i])
-    f.write(result + "\n");
+//    f.write(result + "\n");
 
 	send(
         result
                 
         );
         }
-        f.flush();
-        f.close();
+//        f.flush();
+//        f.close();
 });
